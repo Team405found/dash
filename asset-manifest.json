@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dash/static/css/main.2b10cd78.css",
-    "main.js": "/dash/static/js/main.b934ee88.js",
+    "main.css": "/dash/static/css/main.fd1a55de.css",
+    "main.js": "/dash/static/js/main.04f797a1.js",
     "static/media/temperature2022-AQUA_MODIS.20220101_20221231.L3m.YR.SST.sst.4km.nc.png": "/dash/static/media/temperature2022-AQUA_MODIS.20220101_20221231.L3m.YR.SST.sst.4km.nc.91720b0edc136bdd88e1.png",
     "static/media/sea_ice32.png": "/dash/static/media/sea_ice32.d69984bcc61e0771b5b2.png",
     "static/media/sea_ice31.png": "/dash/static/media/sea_ice31.146d62b87658cc6d6b61.png",
@@ -578,11 +578,11 @@
     "static/media/is_114.jpg": "/dash/static/media/is_114.e766b5b502fc4c6fcd67.jpg",
     "static/media/405.png": "/dash/static/media/405.862c9171215a1452d15e.png",
     "index.html": "/dash/index.html",
-    "main.2b10cd78.css.map": "/dash/static/css/main.2b10cd78.css.map",
-    "main.b934ee88.js.map": "/dash/static/js/main.b934ee88.js.map"
+    "main.fd1a55de.css.map": "/dash/static/css/main.fd1a55de.css.map",
+    "main.04f797a1.js.map": "/dash/static/js/main.04f797a1.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b10cd78.css",
-    "static/js/main.b934ee88.js"
+    "static/css/main.fd1a55de.css",
+    "static/js/main.04f797a1.js"
   ]
 }
