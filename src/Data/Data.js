@@ -33,6 +33,11 @@ export const SidebarData = [
     icon: UilChart,
     heading: "Time Lapse",
     path: "/demo"
+  },
+  {
+    icon: UilUsersAlt,
+    heading: "Carbon Footprint",
+    path: "/carbon"
   }
 ];
 

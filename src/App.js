@@ -12,6 +12,7 @@ import SeaIce from './components/demo/sea_ice';
 import IceS from './components/demo/ice_sheets';
 import OceanW from './components/demo/ocean_warming';
 import Demo from './components/demo/demo';
+import Carbon from './components/carbon/carbon'
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
               <Route path="/sea_ice" element={<SeaIce />} />
               <Route path="/ice_sheets" element={<IceS />} />
               <Route path="/ocean_warming" element={<OceanW />} />
+              <Route path="/carbon" element={<Carbon />} />
           </Routes>
           <RightSide />
         </div>

@@ -1,0 +1,13 @@
+.website-frame-container {
+    width: 100%;
+    height: 100%; /* Adjust the height as needed */
+    margin-top: 10px;
+    overflow: hidden; /* Add some space above the iframe */
+  }
+
+  
+  .website-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }

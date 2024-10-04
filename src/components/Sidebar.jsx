@@ -34,10 +34,12 @@ const Sidebar = () => {
         animate={window.innerWidth <= 768 ? `${expanded}` : ""}
       >
         <div className="logo">
-          <img src={Logo} alt="logo" />
+          <a href="https://team405found.github.io/climatter" target="_blank" rel="noopener noreferrer">
+          <img src={Logo} alt="logo" style={{ width: '40px', height: 'auto',marginRight: '10px' }} />
           <span>
-            <span>Cli</span>matter
+            Climatter
           </span>
+          </a>
         </div>
 
         <div className="menu">
