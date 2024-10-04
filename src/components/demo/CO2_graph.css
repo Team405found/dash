@@ -1,0 +1,140 @@
+/* Apply this to the body or the highest level container */
+/* body {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+   */
+  /* Adjusted slider-container */
+  .slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60vw; /* Make the width 60% of the viewport width */
+    height: 100vh;
+    padding:0;
+    margin: 0;
+  }
+  
+  /* Other styles remain unchanged */
+  .image-box {
+    width: 60vw; /* Adjust the width to fit your needs */
+    height: 50vh; /* Adjust the height to fit your needs */
+    margin-bottom: 10px;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Makes sure the image fits inside the box */
+  }
+  
+  .slider-values {
+    display: flex;
+    align-items: center; /* Align items vertically */
+  }
+  
+  .slider-bar {
+    -webkit-appearance: none; /* Hides the default slider */
+    width: 40vw; /* Adjust the width as desired */
+    margin: 0 10px; /* Add space between numbers and slider */
+    background: transparent; /* Make background transparent */
+  }
+  
+  .year-label {
+    font-size: 1.2rem; /* Font size for the years */
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Change the color as needed */
+    transition: color 0.3s; /* Add a transition effect */
+  }
+  
+  .start-year:hover,
+  .end-year:hover {
+    color: #4caf50; /* Change color on hover */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  .slider-bar::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Hides the default slider thumb */
+    height: 20px; /* Custom height */
+    width: 20px; /* Custom width */
+    background: #4caf50; /* Thumb color */
+    border-radius: 50%; /* Rounded thumb */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Shadow for effect */
+    margin-top: -6px; /* Adjust this value to align with the track */
+  }
+  
+  .slider-bar::-webkit-slider-runnable-track {
+    height: 8px; /* Track height */
+    background: #ddd; /* Track color */
+    border-radius: 5px; /* Rounded track */
+  }
+  
+  .slider-bar::-moz-range-thumb {
+    height: 20px; /* Custom height */
+    width: 20px; /* Custom width */
+    background: #4caf50; /* Thumb color */
+    border-radius: 50%; /* Rounded thumb */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Shadow for effect */
+    margin-top: -6px; /* Adjust this value to align with the track */
+  }
+  
+  .slider-bar::-moz-range-track {
+    height: 8px; /* Track height */
+    background: #ddd; /* Track color */
+    border-radius: 5px; /* Rounded track */
+  }
+  
+  .slider-bar::-ms-thumb {
+    height: 20px; /* Custom height */
+    width: 20px; /* Custom width */
+    background: #4caf50; /* Thumb color */
+    border-radius: 50%; /* Rounded thumb */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Shadow for effect */
+    margin-top: -6px; /* Adjust this value to align with the track */
+  }
+  
+  .slider-bar::-ms-track {
+    height: 8px; /* Track height */
+    background: #ddd; /* Track color */
+    border-radius: 5px; /* Rounded track */
+    border: none; /* Remove borders */
+  }
+  .slider-container h1 {
+    font-size: 2.5rem; /* Adjust the font size */
+    font-weight: bold; /* Make the text bold */
+    text-align: center;
+    width: 90%;
+     /* Center the title */
+    margin-bottom: 50px; /* Space below the title */
+    background: linear-gradient(90deg, #d9d9d9, #a6a6a6, #f0f0f0, #e6e6e6, #bfbfbf); /* Gradient background */
+    background-size: 200% 200%; /* Allow for smoother animation */
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make the text transparent */
+    background-clip: text; /* Ensure compatibility with non-WebKit browsers */
+    animation: wave-gradient 2s ease infinite; /* Add animation for effect */
+}
+
+/* Optional: Add a keyframe animation for a subtle gradient effect */
+@keyframes wave-gradient {
+    0% {
+        background-position: 0% 50%; /* Start from the left */
+    }
+    25% {
+        background-position: 100% 50%; /* Move to the right */
+    }
+    50% {
+        background-position: 100% 50%; /* Hold on the right */
+    }
+    75% {
+        background-position: 0% 50%; /* Move back to the left */
+    }
+    100% {
+        background-position: 0% 50%; /* Hold on the left */
+    }
+}

@@ -29,6 +29,11 @@ export const SidebarData = [
     heading: "3D Visualizer",
     path: "/3d-visualizer"
   },
+  {
+    icon: UilChart,
+    heading: "Time Lapse",
+    path: "/demo"
+  }
 ];
 
 // Analytics Cards Data
@@ -41,7 +46,7 @@ export const cardsData = [
     },
     barValue: 121,
     value: "426 ppm",
-    png: UilSignOutAlt,
+    png: UilChart,
     series: [
       { year: 1979, value: 336.85 },
       { year: 1980, value: 338.91 },
@@ -98,7 +103,7 @@ export const cardsData = [
     },
     barValue: 105,
     value: "1929 ppb",
-    png: UilUsdSquare,
+    png: UilChart,
     series: [
       { year: 1983, value: 1636.58 },
       { year: 1984, value: 1645.02 },
@@ -152,7 +157,7 @@ export const cardsData = [
     },
     barValue: 110,
     value: "337 ppb",
-    png: UilMoneyWithdrawal,
+    png: UilChart,
     series: [
       { year: 2001.042, value: 316.3 },
       { year: 2001.125, value: 316.31 },

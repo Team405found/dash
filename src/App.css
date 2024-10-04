@@ -60,9 +60,9 @@
   border-radius: 2rem;
   gap: 16px;
   grid-template-columns: 11rem auto 20rem; /* Sidebar, Main, RightSide */
-  grid-template-rows: auto;
-  overflow: hidden; /* Prevent content overflow */
+  grid-template-rows: auto; /* Prevent content overflow */
   box-sizing: border-box; /* Include padding/border in width/height calculations */
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1200px) {

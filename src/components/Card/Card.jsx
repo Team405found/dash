@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Card.css";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
@@ -23,7 +23,17 @@ const Card = (props) => {
 
 // Compact Card
 function CompactCard({ param, setExpanded }) {
+  const [progress, setProgress] = useState(0); // Initial progress value set to 0
   const Png = param.png;
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setProgress(param.barValue); // Animate to the actual value
+    }, 200); // Delay to start animation (optional)
+
+    return () => clearTimeout(timeout); // Clean up timeout
+  }, [param.barValue]); // Only re-run when barValue changes
+
   return (
     <motion.div
       className="CompactCard"
@@ -35,10 +45,7 @@ function CompactCard({ param, setExpanded }) {
       onClick={setExpanded}
     >
       <div className="radialBar">
-        <CircularProgressbar
-          value={param.barValue}
-          text={`${param.barValue}%`}
-        />
+        <CircularProgressbar value={progress} text={`${progress}%`} />
         <span>{param.title}</span>
       </div>
       <div className="detail">

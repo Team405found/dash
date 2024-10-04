@@ -1,8 +1,9 @@
 .website-frame-container {
     width: 100%;
     height: 400px; /* Adjust the height as needed */
-    margin-top: 20px; /* Add some space above the iframe */
+    margin-top: 10px; /* Add some space above the iframe */
   }
+
   
   .website-frame {
     width: 100%;
