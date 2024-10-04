@@ -12,21 +12,26 @@ const Sidebar = () => {
 
   const sidebarVariants = {
     true: {
-      left: '0'
+      left: "0",
     },
     false: {
-      left: '-60%'
-    }
+      left: "-60%",
+    },
   };
 
   return (
     <>
-      <div className="bars" style={expanded ? { left: '60%' } : { left: '5%' }} onClick={() => setExpaned(!expanded)}>
+      <div
+        className="bars"
+        style={expanded ? { left: "60%" } : { left: "5%" }}
+        onClick={() => setExpaned(!expanded)}
+      >
         <UilBars />
       </div>
-      <motion.div className='sidebar'
+      <motion.div
+        className="sidebar"
         variants={sidebarVariants}
-        animate={window.innerWidth <= 768 ? `${expanded}` : ''}
+        animate={window.innerWidth <= 768 ? `${expanded}` : ""}
       >
         <div className="logo">
           <img src={Logo} alt="logo" />
@@ -38,7 +43,12 @@ const Sidebar = () => {
         <div className="menu">
           {SidebarData.map((item, index) => {
             return (
-              <Link to={item.path} key={index} className={selected === index ? "menuItem active" : "menuItem"} onClick={() => setSelected(index)}>
+              <Link
+                to={item.path}
+                key={index}
+                className={selected === index ? "menuItem active" : "menuItem"}
+                onClick={() => setSelected(index)}
+              >
                 <item.icon />
                 <span>{item.heading}</span>
               </Link>
